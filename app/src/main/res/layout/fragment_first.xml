@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A47FB4"
+    tools:context=".FirstFragment">
+
+    <Switch
+        android:id="@+id/happines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Happiness"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/optimism"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/optimism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Optimism"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBottom_toTopOf="@+id/respect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/kindness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Kindness"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/optimism"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Switch
+        android:id="@+id/giving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:text="Giving"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/respect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/respect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respect"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/ego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Ego"
+        android:thumbTint="@color/material_dynamic_tertiary20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/respect"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
