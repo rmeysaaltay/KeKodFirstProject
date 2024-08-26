@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/happines"
+        android:icon="@drawable/happy_24"
+        android:title="Happines" />
+    <item
+        android:id="@+id/optimism"
+        android:icon="@drawable/optimism_24"
+        android:title="Optimism" />
+    <item
+        android:id="@+id/kindness"
+        android:icon="@drawable/kind_24"
+        android:title="Kidness" />
+    <item
+        android:id="@+id/giving"
+        android:icon="@drawable/giving_24"
+        android:title="Giving" />
+    <item
+        android:id="@+id/respect"
+        android:icon="@drawable/respect_24"
+        android:title="Respect" />
+</menu>
