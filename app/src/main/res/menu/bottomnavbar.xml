@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    <item-->
+<!--        android:id="@+id/happinesFragment"-->
+<!--        android:icon="@drawable/happy_24"-->
+<!--        android:title="Happines" />-->
+<!--    <item-->
+<!--        android:id="@+id/optimismFragment"-->
+<!--        android:icon="@drawable/optimism_24"-->
+<!--        android:title="Optimism" />-->
+<!--    <item-->
+<!--        android:id="@+id/kindnessFragment"-->
+<!--        android:icon="@drawable/kind_24"-->
+<!--        android:title="Kidness"-->
+<!--         />-->
+<!--       <item-->
+<!--           android:id="@+id/givingFragment"-->
+<!--        android:icon="@drawable/giving_24"-->
+<!--        android:title="Giving" />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/respectFragment"-->
+<!--        android:icon="@drawable/respect_24"-->
+<!--        android:title="Respect"-->
+<!--        />-->
+
     <item
-        android:id="@+id/happines"
-        android:icon="@drawable/happy_24"
-        android:title="Happines" />
-    <item
-        android:id="@+id/optimism"
-        android:icon="@drawable/optimism_24"
-        android:title="Optimism" />
-    <item
-        android:id="@+id/kindness"
-        android:icon="@drawable/kind_24"
-        android:title="Kidness" />
-    <item
-        android:id="@+id/giving"
-        android:icon="@drawable/giving_24"
-        android:title="Giving" />
-    <item
-        android:id="@+id/respect"
-        android:icon="@drawable/respect_24"
-        android:title="Respect" />
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ego_24"
+        android:title="Ego" />
+
 </menu>
