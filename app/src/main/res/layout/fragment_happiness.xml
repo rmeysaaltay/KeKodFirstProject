@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HappinesFragment"
-    android:background="@drawable/happy_24">
+    android:background="#C2185B"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".HappinesFragment">
 
 
-
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C2185B"
+        android:text="Happiness:
+Happiness is a state of well-being characterized by feelings of joy, contentment, and satisfaction.
+It often arises from fulfilling personal goals, nurturing relationships, and appreciating life’s simple pleasures.
+ Pursuing happiness involves a balance of self-care, meaningful activities, and positive outlooks."
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="253dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RespectFragment"
-    android:background="@drawable/respect_24">
+    android:background="#67BC6B"
+    tools:context=".RespectFragment">
 
 
-
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respect:
+Respect is the cornerstone of meaningful relationships and effective communication.
+It involves valuing others' opinions, feelings, and boundaries, regardless of differences.
+ By showing respect, we create an environment of trust and understanding, which is essential for cooperation and harmony."
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="218dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GivingFragment"
-    android:background="@drawable/giving_24"/>
+    android:background="#E6B744"
+    tools:context=".GivingFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giving:
+Giving is a powerful act that transcends material possessions.
+ It involves sharing time, resources, or kindness with others without expecting anything in return.
+ Whether through charity, support, or simple gestures, giving enriches both the giver and the recipient, creating a ripple effect of positivity."
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="238dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
