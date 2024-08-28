@@ -64,9 +64,9 @@ class FirstFragment : Fragment() {
                     menu.add(Menu.NONE, R.id.egoFragment2, Menu.NONE, "giving")
                         .setIcon(R.drawable.ego_24)
                 }
-            }else {
-                val item = menu.findItem(R.id.givingFragment)
-                if (item != null) menu.removeItem(R.id.givingFragment)
+            } else {
+                val item = menu.findItem(R.id.egoFragment2)
+                if (item != null) menu.removeItem(R.id.egoFragment2)
 
                 binding.respect.isEnabled = true
                 binding.happines.isEnabled = true
