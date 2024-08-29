@@ -25,9 +25,6 @@
         <action
             android:id="@+id/action_firstFragment_to_respectFragment"
             app:destination="@id/respectFragment" />
-        <action
-            android:id="@+id/action_firstFragment_to_egoFragment2"
-            app:destination="@id/egoFragment2" />
     </fragment>
     <fragment
         android:id="@+id/givingFragment"
@@ -54,9 +51,4 @@
         android:name="com.example.projebir.RespectFragment"
         android:label="fragment_respect"
         tools:layout="@layout/fragment_respect" />
-    <fragment
-        android:id="@+id/egoFragment2"
-        android:name="com.example.projebir.EgoFragment"
-        android:label="fragment_ego"
-        tools:layout="@layout/fragment_ego" />
 </navigation>
