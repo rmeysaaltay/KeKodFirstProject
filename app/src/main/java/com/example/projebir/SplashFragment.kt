@@ -17,9 +17,7 @@ import kotlinx.coroutines.launch
 
 
 class SplashFragment : Fragment() {
-    val bottomNavView by lazy {
-        requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavigationBar)
-    }
+
 
     private var _binding: FragmentSplashBinding? = null
     private val binding get() = _binding!!
@@ -30,7 +28,6 @@ class SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        bottomNavView.visibility = View.GONE
         scope.launch {
             delay(500)
             findNavController().navigate(R.id.action_splashFragment_to_firstFragment)

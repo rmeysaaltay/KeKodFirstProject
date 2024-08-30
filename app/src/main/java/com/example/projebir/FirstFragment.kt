@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.projebir.databinding.FragmentFirstBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -79,6 +80,8 @@ class FirstFragment : Fragment() {
                 if (menu.findItem(R.id.givingFragment) == null) {
                     menu.add(Menu.NONE, R.id.givingFragment, Menu.NONE, "giving")
                         .setIcon(R.drawable.giving_24)
+                } else{
+                    Toast.makeText(requireContext(),"5'den fazla item eklenemez!",Toast.LENGTH_SHORT).show()
                 }
             } }else {
                 val item = menu.findItem(R.id.givingFragment)
@@ -100,6 +103,8 @@ class FirstFragment : Fragment() {
                     if (menu.findItem(R.id.happinesFragment) == null) {
                         menu.add(Menu.NONE, R.id.happinesFragment, Menu.NONE, "happiness")
                             .setIcon(R.drawable.happy_24)
+                    }else{
+                        Toast.makeText(requireContext(),"5'den fazla item eklenemez!",Toast.LENGTH_SHORT).show()
                     }
 
                 }
@@ -123,6 +128,8 @@ class FirstFragment : Fragment() {
                 if (menu.findItem(R.id.kindnessFragment) == null) {
                     menu.add(Menu.NONE, R.id.kindnessFragment, Menu.NONE, "kindness")
                         .setIcon(R.drawable.kind_24)
+                }else{
+                    Toast.makeText(requireContext(),"5'den fazla item eklenemez!",Toast.LENGTH_SHORT).show()
                 }
             } }else {
                 val item = menu.findItem(R.id.kindnessFragment)
@@ -145,6 +152,8 @@ class FirstFragment : Fragment() {
                     menu.add(Menu.NONE, R.id.optimismFragment, Menu.NONE, "optimism")
                         .setIcon(R.drawable.optimism_24)
 
+                }else{
+                    Toast.makeText(requireContext(),"5'den fazla item eklenemez!",Toast.LENGTH_SHORT).show()
                 }
             } }else {
                 val item = menu.findItem(R.id.optimismFragment)
@@ -168,6 +177,8 @@ class FirstFragment : Fragment() {
                     menu.add(Menu.NONE, R.id.respectFragment, Menu.NONE, "respect")
                         .setIcon(R.drawable.respect_24)
 
+                }else{
+                    Toast.makeText(requireContext(),"5'den fazla item eklenemez!",Toast.LENGTH_SHORT).show()
                 }
             } }else {
                 val item = menu.findItem(R.id.respectFragment)
