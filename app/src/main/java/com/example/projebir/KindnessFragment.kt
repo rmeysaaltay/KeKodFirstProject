@@ -13,13 +13,12 @@ import kotlinx.coroutines.launch
 
 class KindnessFragment : Fragment() {
 
-    private val scope= CoroutineScope(Dispatchers.Main)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        scope.launch { delay(1500) }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_kindness, container, false)
     }

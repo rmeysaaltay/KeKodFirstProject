@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 
 class GivingFragment : Fragment() {
-    private val scope= CoroutineScope(Dispatchers.Main)
+
 
 
 
@@ -20,7 +20,7 @@ class GivingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        scope.launch { delay(1500) }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_giving, container, false)
     }

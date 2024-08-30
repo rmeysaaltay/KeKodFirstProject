@@ -3,7 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.projebir.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/firstFragment"
@@ -51,4 +62,5 @@
         android:name="com.example.projebir.RespectFragment"
         android:label="fragment_respect"
         tools:layout="@layout/fragment_respect" />
+
 </navigation>
