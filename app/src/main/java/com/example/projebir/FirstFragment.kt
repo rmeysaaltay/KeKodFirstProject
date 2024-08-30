@@ -4,17 +4,10 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.Switch
-import androidx.core.graphics.createBitmap
-import androidx.core.view.forEach
-import androidx.core.view.isVisible
 import com.example.projebir.databinding.FragmentFirstBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarItemView
 
 
 class FirstFragment : Fragment() {
@@ -30,7 +23,7 @@ class FirstFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
     }
