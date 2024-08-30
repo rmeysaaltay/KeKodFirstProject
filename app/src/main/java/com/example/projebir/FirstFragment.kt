@@ -80,16 +80,18 @@ class FirstFragment : Fragment() {
         val menu = bottomNavView.menu
         binding.giving.setOnCheckedChangeListener() { _, isChecked ->
 
-            if (isChecked&&bottomNavView.menu.size () < 5) {
-                    if (menu.findItem(R.id.givingFragment) == null) {
-                        menu.add(Menu.NONE, R.id.givingFragment, Menu.NONE, "giving")
-                            .setIcon(R.drawable.giving_24)
-                    }
-                } else {
-                    val item = menu.findItem(R.id.givingFragment)
-                    if (item != null) menu.removeItem(R.id.givingFragment)
-                binding.giving.isChecked=false
+            if (isChecked ) {
+
+                if (bottomNavView.menu.size() < 5) {
+                if (menu.findItem(R.id.givingFragment) == null) {
+                    menu.add(Menu.NONE, R.id.givingFragment, Menu.NONE, "giving")
+                        .setIcon(R.drawable.giving_24)
                 }
+            } }else {
+                val item = menu.findItem(R.id.givingFragment)
+                if (item != null) menu.removeItem(R.id.givingFragment)
+
+            }
 
 
         }
@@ -100,18 +102,19 @@ class FirstFragment : Fragment() {
         if (binding.ego.isChecked) binding.happines.isEnabled = false
         val menu = bottomNavView.menu
         binding.happines.setOnCheckedChangeListener() { _, isChecked ->
-
-            if (isChecked&&bottomNavView.menu.size () < 5) {
+            if (isChecked) {
+                if (bottomNavView.menu.size() < 5) {
                     if (menu.findItem(R.id.happinesFragment) == null) {
                         menu.add(Menu.NONE, R.id.happinesFragment, Menu.NONE, "happiness")
                             .setIcon(R.drawable.happy_24)
                     }
 
-                } else {
-                    val item = menu.findItem(R.id.happinesFragment)
-                    if (item != null) menu.removeItem(R.id.happinesFragment)
-                binding.happines.isChecked=false
                 }
+            } else {
+                val item = menu.findItem(R.id.happinesFragment)
+                if (item != null) menu.removeItem(R.id.happinesFragment)
+
+            }
 
         }
     }
@@ -121,16 +124,18 @@ class FirstFragment : Fragment() {
         if (binding.ego.isChecked) binding.kindness.isEnabled = false
         val menu = bottomNavView.menu
         binding.kindness.setOnCheckedChangeListener() { _, isChecked ->
-            if (isChecked&&bottomNavView.menu.size () < 5) {
-                    if (menu.findItem(R.id.kindnessFragment) == null) {
-                        menu.add(Menu.NONE, R.id.kindnessFragment, Menu.NONE, "kindness")
-                            .setIcon(R.drawable.kind_24)
-                    }
-                } else {
-                    val item = menu.findItem(R.id.kindnessFragment)
-                    if (item != null) menu.removeItem(R.id.kindnessFragment)
-                binding.kindness.isChecked=false
+            if (isChecked ) {
+
+                if (bottomNavView.menu.size() < 5) {
+                if (menu.findItem(R.id.kindnessFragment) == null) {
+                    menu.add(Menu.NONE, R.id.kindnessFragment, Menu.NONE, "kindness")
+                        .setIcon(R.drawable.kind_24)
                 }
+            } }else {
+                val item = menu.findItem(R.id.kindnessFragment)
+                if (item != null) menu.removeItem(R.id.kindnessFragment)
+
+            }
         }
     }
 
@@ -139,19 +144,20 @@ class FirstFragment : Fragment() {
         if (binding.ego.isChecked) binding.optimism.isEnabled = false
         val menu = bottomNavView.menu
         binding.optimism.setOnCheckedChangeListener() { _, isChecked ->
-            if (isChecked&&bottomNavView.menu.size () < 5) {
-                    val menu = bottomNavView.menu
-                    if (menu.findItem(R.id.optimismFragment) == null) {
-                        menu.add(Menu.NONE, R.id.optimismFragment, Menu.NONE, "optimism")
-                            .setIcon(R.drawable.optimism_24)
-                            .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
+            if (isChecked ) {
 
-                    }
-                } else {
-                    val item = menu.findItem(R.id.optimismFragment)
-                    if (item != null) menu.removeItem(R.id.optimismFragment)
-                binding.optimism.isChecked=false
+                if (bottomNavView.menu.size() < 5) {
+                val menu = bottomNavView.menu
+                if (menu.findItem(R.id.optimismFragment) == null) {
+                    menu.add(Menu.NONE, R.id.optimismFragment, Menu.NONE, "optimism")
+                        .setIcon(R.drawable.optimism_24)
+
                 }
+            } }else {
+                val item = menu.findItem(R.id.optimismFragment)
+                if (item != null) menu.removeItem(R.id.optimismFragment)
+
+            }
 
         }
     }
@@ -161,21 +167,23 @@ class FirstFragment : Fragment() {
         binding.respect.setOnCheckedChangeListener() { _, isChecked ->
             val menu = bottomNavView.menu
 
-                if (isChecked&&bottomNavView.menu.size () < 5) {
+            if (isChecked ) {
 
-                    if (menu.findItem(R.id.respectFragment) == null) {
-                        menu.add(Menu.NONE, R.id.respectFragment, Menu.NONE, "respect")
-                            .setIcon(R.drawable.respect_24)
-                            .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
-                    }
-                } else {
-                    val item = menu.findItem(R.id.respectFragment)
-                    if (item != null) {
-                        menu.removeItem(R.id.respectFragment)
-                        binding.respect.isChecked=false
-                    }
+                if (bottomNavView.menu.size() < 5) {
+
+                if (menu.findItem(R.id.respectFragment) == null) {
+                    menu.add(Menu.NONE, R.id.respectFragment, Menu.NONE, "respect")
+                        .setIcon(R.drawable.respect_24)
+
+                }
+            } }else {
+                val item = menu.findItem(R.id.respectFragment)
+                if (item != null) {
+                    menu.removeItem(R.id.respectFragment)
+
                 }
             }
+        }
 
     }
 }
