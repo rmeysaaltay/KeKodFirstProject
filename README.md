@@ -1,6 +1,6 @@
 # Switch-Controlled Bottom Navigation App
 
-Hey there! Welcome to the **Switch-Controlled Bottom Navigation App**. This is a simple Android project that shows how to use UI components and Jetpack Navigation in a fun way.
+Hey there! Welcome to the **KekodFirstProject App**. This is a simple Android project that shows how to use UI components and Jetpack Navigation in a fun way.
 
 ## Features
 
