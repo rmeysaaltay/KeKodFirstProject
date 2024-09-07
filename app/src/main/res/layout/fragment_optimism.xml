@@ -15,7 +15,12 @@
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/giving"
+        app:lottie_rawRes="@raw/optimsm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="140dp" />
 
