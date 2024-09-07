@@ -19,12 +19,7 @@ class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
-    val ego = binding.ego
-    val giving = binding.giving
-    val respect = binding.respect
-    val happines = binding.happines
-    val kindness = binding.kindness
-    val optimism = binding.optimism
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,11 +29,23 @@ class FirstFragment : Fragment() {
         return binding.root
     }
 
+    val ego = binding.ego
+    val giving = binding.giving
+    val respect = binding.respect
+    val happines = binding.happines
+    val kindness = binding.kindness
+    val optimism = binding.optimism
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         bottomNavView.visibility = View.GONE
+        giving.isEnabled=false
+        respect.isEnabled=false
+        happines.isEnabled=false
+        kindness.isEnabled=false
+        optimism.isEnabled=false
+
         ego()
         giving()
         respect()
@@ -85,13 +92,13 @@ class FirstFragment : Fragment() {
                     if (menu.findItem(R.id.givingFragment) == null) {
                         menu.add(Menu.NONE, R.id.givingFragment, Menu.NONE, "giving")
                             .setIcon(R.drawable.giving_24)
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "5'den fazla item eklenemez!",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "5'den fazla item eklenemez!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             } else {
                 val item = menu.findItem(R.id.givingFragment)
@@ -113,15 +120,15 @@ class FirstFragment : Fragment() {
                     if (menu.findItem(R.id.happinesFragment) == null) {
                         menu.add(Menu.NONE, R.id.happinesFragment, Menu.NONE, "happiness")
                             .setIcon(R.drawable.happy_24)
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "5'den fazla item eklenemez!",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
-
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "5'den fazla item eklenemez!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
+
             } else {
                 val item = menu.findItem(R.id.happinesFragment)
                 if (item != null) menu.removeItem(R.id.happinesFragment)
@@ -142,13 +149,13 @@ class FirstFragment : Fragment() {
                     if (menu.findItem(R.id.kindnessFragment) == null) {
                         menu.add(Menu.NONE, R.id.kindnessFragment, Menu.NONE, "kindness")
                             .setIcon(R.drawable.kind_24)
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "5'den fazla item eklenemez!",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "5'den fazla item eklenemez!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             } else {
                 val item = menu.findItem(R.id.kindnessFragment)
@@ -171,13 +178,13 @@ class FirstFragment : Fragment() {
                         menu.add(Menu.NONE, R.id.optimismFragment, Menu.NONE, "optimism")
                             .setIcon(R.drawable.optimism_24)
 
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "5'den fazla item eklenemez!",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "5'den fazla item eklenemez!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             } else {
                 val item = menu.findItem(R.id.optimismFragment)
@@ -201,14 +208,12 @@ class FirstFragment : Fragment() {
                         menu.add(Menu.NONE, R.id.respectFragment, Menu.NONE, "respect")
                             .setIcon(R.drawable.respect_24)
 
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "5'den fazla item eklenemez!",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
-                }
+                } else Toast.makeText(
+                    requireContext(),
+                    "5'den fazla item eklenemez!",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 val item = menu.findItem(R.id.respectFragment)
                 if (item != null) {

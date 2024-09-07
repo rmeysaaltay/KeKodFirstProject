@@ -3,19 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#67BC6B"
     tools:context=".RespectFragment">
 
 
-    <TextView
-        android:id="@+id/textView4"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Respect:
-Respect is the cornerstone of meaningful relationships and effective communication.
-It involves valuing others' opinions, feelings, and boundaries, regardless of differences.
- By showing respect, we create an environment of trust and understanding, which is essential for cooperation and harmony."
-        android:textSize="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/respect"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="218dp" />
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

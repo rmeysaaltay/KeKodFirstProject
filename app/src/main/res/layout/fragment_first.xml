@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Happiness"
-        android:thumbTint="@android:color/system_accent1_800"
+        android:thumbTint="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/optimism"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:text="Optimism"
-        android:thumbTint="@android:color/system_accent1_800"
+        android:thumbTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/respect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:text="Kindness"
-        android:thumbTint="@color/material_dynamic_tertiary20"
+        android:thumbTint="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/optimism"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:text="Giving"
-        android:thumbTint="@android:color/system_accent1_800"
+        android:thumbTint="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/respect"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Respect"
-        android:thumbTint="@android:color/system_accent1_800"
+        android:thumbTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
@@ -67,7 +67,7 @@
         android:layout_marginEnd="56dp"
         android:checked="true"
         android:text="Ego"
-        android:thumbTint="@android:color/system_accent1_800"
+        android:thumbTint="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/respect"
         app:layout_constraintEnd_toEndOf="parent" />
 

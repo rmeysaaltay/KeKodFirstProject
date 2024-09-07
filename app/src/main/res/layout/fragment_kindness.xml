@@ -3,19 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#65AAEF"
     tools:context=".KindnessFragment">
 
 
-    <TextView
-        android:id="@+id/textView5"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kindness:
-Kindness is the quality of being compassionate and considerate towards others.
- It manifests in small, everyday actions like offering a smile or helping someone in need.
- Acts of kindness not only uplift those around us but also contribute to a more empathetic and connected community."
-        android:textSize="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/kindness"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="238dp" />
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

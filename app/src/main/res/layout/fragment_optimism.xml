@@ -3,19 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#C598D9"
     tools:context=".OptimismFragment">
 
 
-    <TextView
-        android:id="@+id/textView6"
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Optimism:
-Optimism is the tendency to see the positive side of situations and anticipate favorable outcomes.
- This outlook fosters resilience and encourages proactive behavior, even in challenging times.
-  By focusing on possibilities and maintaining hope, optimism helps individuals overcome obstacles and achieve their goals."
-        android:textSize="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/giving"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="218dp" />
+        tools:layout_editor_absoluteY="140dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
