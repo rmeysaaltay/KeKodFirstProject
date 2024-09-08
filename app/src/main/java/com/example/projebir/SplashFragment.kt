@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.projebir.databinding.FragmentFirstBinding
-import com.example.projebir.databinding.FragmentSplashBinding
+import com.example.aswitch.R
+import com.example.aswitch.databinding.FragmentSplashBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

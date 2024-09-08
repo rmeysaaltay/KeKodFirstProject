@@ -7,7 +7,8 @@ import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.projebir.databinding.FragmentFirstBinding
+import com.example.aswitch.R
+import com.example.aswitch.databinding.FragmentFirstBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

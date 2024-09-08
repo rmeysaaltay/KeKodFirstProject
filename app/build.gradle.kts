@@ -5,21 +5,24 @@ plugins {
 
 android {
 
-    buildFeatures {
-        viewBinding = true
-    }
-
-    namespace = "com.example.projebir"
+    namespace = "com.example.aswitch"
     compileSdk = 34
 
+
     defaultConfig {
-        applicationId = "com.example.projebir"
+        applicationId = "com.example.aswitch"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        dataBinding = true
+    }
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -32,25 +35,26 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
-
 }
 
 dependencies {
-    val nav_version = "2.7.7"
-    
-    implementation(libs.lottie)
-    implementation(libs.navigation.fragment.ktx)
-    implementation(libs.navigation.ui.ktx)
 
-    implementation ("com.airbnb.android:lottie:5.0.3")
+    val nav_version = "2.7.7"
+
+    implementation("androidx.activity:activity:1.9.2")
+
+
+    implementation("com.airbnb.android:lottie:5.0.3")
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
