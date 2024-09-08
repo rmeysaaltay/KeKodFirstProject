@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
 
-    namespace = "com.example.aswitch"
+    namespace = "com.example.projebir"
     compileSdk = 34
 
 
     defaultConfig {
-        applicationId = "com.example.aswitch"
+        applicationId = "com.example.projebir"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -18,9 +19,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    buildFeatures {
-        dataBinding = true
-    }
+
     buildFeatures {
         viewBinding = true
     }

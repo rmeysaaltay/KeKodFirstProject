@@ -9,8 +9,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import com.example.aswitch.R
-import com.example.aswitch.databinding.ActivityMainBinding
+import com.example.projebir.R
+import com.example.projebir.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

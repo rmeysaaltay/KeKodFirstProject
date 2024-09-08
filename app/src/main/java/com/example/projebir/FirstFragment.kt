@@ -7,8 +7,8 @@ import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.aswitch.R
-import com.example.aswitch.databinding.FragmentFirstBinding
+import com.example.projebir.R
+import com.example.projebir.databinding.FragmentFirstBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -18,34 +18,29 @@ class FirstFragment : Fragment() {
         requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavigationBar)
     }
 
-    private var _binding: FragmentFirstBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentFirstBinding
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    val ego = binding.ego
-    val giving = binding.giving
-    val respect = binding.respect
-    val happines = binding.happines
-    val kindness = binding.kindness
-    val optimism = binding.optimism
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         bottomNavView.visibility = View.GONE
-        giving.isEnabled=false
-        respect.isEnabled=false
-        happines.isEnabled=false
-        kindness.isEnabled=false
-        optimism.isEnabled=false
+        with(binding) {
+            giving.isEnabled = false
+            respect.isEnabled = false
+            happines.isEnabled = false
+            kindness.isEnabled = false
+            optimism.isEnabled = false
+        }
 
         ego()
         giving()
@@ -59,33 +54,34 @@ class FirstFragment : Fragment() {
 
 
     fun ego() {
+        with(binding) {
+            ego.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    bottomNavView.visibility = View.GONE
+                    giving.isChecked = false
+                    happines.isChecked = false
+                    optimism.isChecked = false
+                    kindness.isChecked = false
+                    respect.isChecked = false
 
-        ego.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                bottomNavView.visibility = View.GONE
-                giving.isChecked = false
-                happines.isChecked = false
-                optimism.isChecked = false
-                kindness.isChecked = false
-                respect.isChecked = false
+                } else {
+                    bottomNavView.visibility = View.VISIBLE
+                    respect.isEnabled = true
+                    happines.isEnabled = true
+                    optimism.isEnabled = true
+                    kindness.isEnabled = true
+                    giving.isEnabled = true
 
-            } else {
-                bottomNavView.visibility = View.VISIBLE
-                respect.isEnabled = true
-                happines.isEnabled = true
-                optimism.isEnabled = true
-                kindness.isEnabled = true
-                giving.isEnabled = true
-
+                }
             }
         }
     }
 
 
     fun giving() {
-        if (ego.isChecked) giving.isEnabled = false
+        if (binding.ego.isChecked) binding.giving.isEnabled = false
         val menu = bottomNavView.menu
-        giving.setOnCheckedChangeListener() { _, isChecked ->
+        binding.giving.setOnCheckedChangeListener() { _, isChecked ->
 
             if (isChecked) {
 
@@ -113,9 +109,9 @@ class FirstFragment : Fragment() {
 
 
     fun happiness() {
-        if (ego.isChecked) happines.isEnabled = false
+        if (binding.ego.isChecked) binding.happines.isEnabled = false
         val menu = bottomNavView.menu
-        happines.setOnCheckedChangeListener() { _, isChecked ->
+        binding.happines.setOnCheckedChangeListener() { _, isChecked ->
             if (isChecked) {
                 if (bottomNavView.menu.size() < 5) {
                     if (menu.findItem(R.id.happinesFragment) == null) {
@@ -141,9 +137,9 @@ class FirstFragment : Fragment() {
 
 
     fun kindness() {
-        if (ego.isChecked) kindness.isEnabled = false
+        if (binding.ego.isChecked) binding.kindness.isEnabled = false
         val menu = bottomNavView.menu
-        kindness.setOnCheckedChangeListener() { _, isChecked ->
+        binding.kindness.setOnCheckedChangeListener() { _, isChecked ->
             if (isChecked) {
 
                 if (bottomNavView.menu.size() < 5) {
@@ -168,9 +164,9 @@ class FirstFragment : Fragment() {
 
 
     fun optimism() {
-        if (ego.isChecked) optimism.isEnabled = false
+        if (binding.ego.isChecked) binding.optimism.isEnabled = false
         val menu = bottomNavView.menu
-        optimism.setOnCheckedChangeListener() { _, isChecked ->
+        binding.optimism.setOnCheckedChangeListener() { _, isChecked ->
             if (isChecked) {
 
                 if (bottomNavView.menu.size() < 5) {
@@ -197,8 +193,8 @@ class FirstFragment : Fragment() {
     }
 
     fun respect() {
-        if (ego.isChecked) respect.isEnabled = false
-        respect.setOnCheckedChangeListener() { _, isChecked ->
+        if (binding.ego.isChecked) binding.respect.isEnabled = false
+        binding.respect.setOnCheckedChangeListener() { _, isChecked ->
             val menu = bottomNavView.menu
 
             if (isChecked) {
