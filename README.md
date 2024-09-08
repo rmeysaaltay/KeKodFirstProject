@@ -1,34 +1,28 @@
 # Switch-Controlled Bottom Navigation App
 
-Hey there! Welcome to the **KekodFirstProject App**. This is a simple Android project that shows how to use UI components and Jetpack Navigation in a fun way.
 
-## Features
+Merhaba! KekodFirstProject Uygulamasına hoş geldiniz. Bu, UI bileşenlerini ve Jetpack Navigasyonu eğlenceli bir şekilde kullanmayı gösteren basit bir Android projesidir.
 
-### Step 1: Getting Started
-- When you open the app, you’ll see 6 switches. The "Ego" switch is ON by default.
-- While "Ego" is ON, you can’t turn on the other 5 switches.
-- When you turn "Ego" OFF, you can play around with the other switches.
-
-### Step 2: BottomNavigationBar Visibility
-- The BottomNavigationBar shows up when "Ego" is OFF. It disappears when "Ego" is ON.
-
-### Step 3: Adding Items to the BottomNavigationBar
-- Each time you turn on a switch, an icon and text are added to the BottomNavigationBar.
-- The items appear in the order you turn the switches on.
-- The main screen, where the switches are, is always added to the BottomNavigationBar, but you’ll only see it when "Ego" is OFF.
-
-### Step 4: Limiting Items in the BottomNavigationBar
-- The BottomNavigationBar can show the main screen plus 4 more switch buttons.
-- The last switch you turn on won’t be added.
-
-### Step 5: Removing Items from the BottomNavigationBar
-- If you turn off a switch, its corresponding item is removed from the BottomNavigationBar.
-
-### Step 6: Navigating to Detail Screens
-- Tapping an item in the BottomNavigationBar takes you to a detail screen for that item.
-
-### Step 7: Using Data Binding
-- We’ve used DataBinding or ViewBinding across all screens for easy UI management.
+Özellikler
+Adım 1: Başlarken
+Uygulamayı açtığınızda 6 switch göreceksiniz. "Ego" switchi varsayılan olarak AÇIK durumdadır.
+"Ego" AÇIK olduğunda, diğer 5 switchi açamazsınız.
+"Ego" kapalı olduğunda, diğer switchleri oynayabilirsiniz.
+Adım 2: Alt Navigasyon Çubuğu Görünürlüğü
+Alt Navigasyon Çubuğu "Ego" kapalı olduğunda görünür. "Ego" AÇIK olduğunda kaybolur.
+Adım 3: Alt Navigasyon Çubuğuna Öğeler Eklemek
+Bir anahtarı açtığınızda, Alt Navigasyon Çubuğuna bir ikon ve metin eklenir.
+Öğeler, anahtarları açtığınız sıraya göre görünür.
+Anahtarların bulunduğu ana ekran her zaman bottom nava eklenir, ancak "Ego" kapalı olmadığında yalnızca onu görebilirsiniz.
+Adım 4: Bottom Navdaki Öğeleri Sınırlama
+Bottom Nav ana ekran ile birlikte en fazla 4 switch düğmesini gösterebilir.
+Açtığınız son switch eklenmeyecektir.
+Adım 5: Menüdeki Öğeleri Kaldırma
+Bir anahtarı kapatırsanız, karşılık gelen öğe Alt Navigasyon Çubuğundan kaldırılır.
+Adım 6: Ayrıntı Ekranlarına Geçiş
+Alt Navigasyon Çubuğundaki bir öğeye dokunduğunuzda, o öğe için ayrıntı ekranına geçersiniz.
+Adım 7: Veri Bağlama Kullanımı
+Kolay UI yönetimi için tüm ekranlarda Veri Bağlama veya Görünüm Bağlama kullandık.
 
 ## Getting Started
 
